@@ -1,0 +1,44 @@
+bin/
+Debug/
+lib/
+libgp/
+lwpr-1.2.4/
+waffles-2012-08-31-source/
+x64/
+
+Notes.txt
+test.txt
+
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
