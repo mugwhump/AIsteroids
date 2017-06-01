@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\libGP">
+      <UniqueIdentifier>{234d18c5-d99d-40cf-87e7-1a4e79aac9d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libGP">
+      <UniqueIdentifier>{8149654a-1283-4379-977c-efb973d1fd59}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Asteroid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ship.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Laser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyboardListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CompleteState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XYObj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Action.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RelativeDirection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputDirection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StateAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="XboxController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Matlab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PowerUp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RGBA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Defaults.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI_LWPR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI_Learner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI_GP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cov_matern3_iso.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cov_matern5_iso.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cov_noise.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cov_rbf_cs.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cov_rq_iso.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cov_se_ard.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cov_se_iso.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cov_sum.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gp.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gp_utils.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rprop.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sampleset.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cov.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cov_factory.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cov_linear_ard.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cov_linear_one.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PopUpText.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI_RBFN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gp_sparse.cc">
+      <Filter>Source Files\libGP</Filter>
+    </ClCompile>
+    <ClCompile Include="AI_ReceptiveFields.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI_Waffle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI_NN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Asteroid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ship.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Laser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CompleteState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XYObj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Action.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputDirection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RelativeDirection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StateAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyError.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XboxController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PowerUp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RGBA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Defaults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI_LWPR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI_Learner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI_GP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\cov_se_ard.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\cov_se_iso.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\cov_sum.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\gp.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\gp_utils.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\rprop.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\sampleset.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\cov.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\cov_factory.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\cov_linear_ard.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\cov_linear_one.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\cov_matern3_iso.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\cov_matern5_iso.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\cov_noise.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\cov_rbf_cs.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\cov_rq_iso.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Matlab.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PopUpText.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI_RBFN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libGP\gp_sparse.h">
+      <Filter>Header Files\libGP</Filter>
+    </ClInclude>
+    <ClInclude Include="AI_ReceptiveFields.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI_Waffle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI_NN.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Notes.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1244 @@
+
+void AI::straightShootingRandomTree() {
+	if( mySimpleState.mySlices[16].targetDirection  ==  eRDir::stringToRelativeDirection("Away") ) { 
+		if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+			if( mySimpleState.mySlices[16].targetDistance < 194.52f ) { 
+				if( mySimpleState.mySlices[11].targetDistance < 209.67f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+				if( mySimpleState.mySlices[11].targetDistance >= 209.67f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+			}
+			if( mySimpleState.mySlices[16].targetDistance >= 194.52f ) { 
+				if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+					if( mySimpleState.shipDirection < 0.22f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+					if( mySimpleState.shipDirection >= 0.22f ) { 
+						if( mySimpleState.mySlices[4].targetDistance < 231.89f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+						if( mySimpleState.mySlices[4].targetDistance >= 231.89f ) { 
+							if( mySimpleState.shipSpeed < 0.09f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+							if( mySimpleState.shipSpeed >= 0.09f ) { 
+								if( mySimpleState.shipDirection < 1.54f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+								if( mySimpleState.shipDirection >= 1.54f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+							}
+						}
+					}
+				}
+				if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+				if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+			}
+		}
+		if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+	}
+	if( mySimpleState.mySlices[16].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") ) { 
+		if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+		if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+		if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+		if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+	}
+	if( mySimpleState.mySlices[16].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+		if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+			if( mySimpleState.invincible  ==  true )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+			if( mySimpleState.invincible  ==  false ) { 
+				if( mySimpleState.mySlices[4].targetDistance < 128.91f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+				if( mySimpleState.mySlices[4].targetDistance >= 128.91f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+			}
+		}
+		if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+			if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Away") ) { 
+				if( mySimpleState.shipDirection < 5.71f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+				if( mySimpleState.shipDirection >= 5.71f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+			}
+			if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+			if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+			if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+			if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+			if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+				if( mySimpleState.mySlices[11].targetDistance < 161.66f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+				if( mySimpleState.mySlices[11].targetDistance >= 161.66f ) { 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+						if( mySimpleState.mySlices[12].targetDistance < 159 )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						if( mySimpleState.mySlices[12].targetDistance >= 159 )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+					}
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				}
+			}
+			if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+			if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+			if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		}
+		if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+	}
+	if( mySimpleState.mySlices[16].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") ) { 
+		if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+		if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+		if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+			if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+			if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+			if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+			if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+			if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+			if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+				if( mySimpleState.mySlices[11].targetDistance < 162.92f ) { 
+					if( mySimpleState.shipSpeed < 0.26f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+					if( mySimpleState.shipSpeed >= 0.26f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+				}
+				if( mySimpleState.mySlices[11].targetDistance >= 162.92f ) { 
+					if( mySimpleState.shipSpeed < 3.24f ) { 
+						if( mySimpleState.mySlices[12].targetDistance < 195.54f ) { 
+							if( mySimpleState.invincible  ==  true )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+							if( mySimpleState.invincible  ==  false )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+						}
+						if( mySimpleState.mySlices[12].targetDistance >= 195.54f ) { 
+							if( mySimpleState.goalDistance < 182.21f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+							if( mySimpleState.goalDistance >= 182.21f ) { 
+								if( mySimpleState.mySlices[12].targetDistance < 196.94f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+								if( mySimpleState.mySlices[12].targetDistance >= 196.94f ) { 
+									if( mySimpleState.shipDirection < 3.91f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+									if( mySimpleState.shipDirection >= 3.91f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+								}
+							}
+						}
+					}
+					if( mySimpleState.shipSpeed >= 3.24f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+				}
+			}
+			if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+			if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+			if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+		}
+		if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+	}
+	if( mySimpleState.mySlices[16].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+		if( mySimpleState.shipDirection < 5.75f ) { 
+			if( mySimpleState.mySlices[2].targetDistance < 169.82f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+			if( mySimpleState.mySlices[2].targetDistance >= 169.82f ) { 
+				if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+				if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+					if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+						if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") ) { 
+							if( mySimpleState.goalDistance < 278.58f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+							if( mySimpleState.goalDistance >= 278.58f ) { 
+								if( mySimpleState.mySlices[1].targetDistance < 176.99f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+								if( mySimpleState.mySlices[1].targetDistance >= 176.99f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+							}
+						}
+						if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+							if( mySimpleState.goalDistance < 135.9f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+							if( mySimpleState.goalDistance >= 135.9f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						}
+						if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+							if( mySimpleState.goalDirection < 3.1f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+							if( mySimpleState.goalDirection >= 3.1f ) { 
+								if( mySimpleState.shipSpeed < 1.41f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+								if( mySimpleState.shipSpeed >= 1.41f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+							}
+						}
+						if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					}
+					if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+					if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") ) { 
+						if( mySimpleState.mySlices[12].targetDistance < 197.76f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+						if( mySimpleState.mySlices[12].targetDistance >= 197.76f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+					}
+					if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				}
+				if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+				if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+			}
+		}
+		if( mySimpleState.shipDirection >= 5.75f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+	}
+	if( mySimpleState.mySlices[16].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+		if( mySimpleState.shipSpeed < 0.04f ) { 
+			if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+			if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+			if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+				if( mySimpleState.shipDirection < 1.23f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+				if( mySimpleState.shipDirection >= 1.23f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+			}
+			if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+			if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+				if( mySimpleState.mySlices[9].targetDistance < 221.39f ) { 
+					if( mySimpleState.mySlices[0].targetDistance < 102.21f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+					if( mySimpleState.mySlices[0].targetDistance >= 102.21f ) { 
+						if( mySimpleState.invincible  ==  true )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						if( mySimpleState.invincible  ==  false ) { 
+							if( mySimpleState.mySlices[18].targetDistance < 141.86f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+							if( mySimpleState.mySlices[18].targetDistance >= 141.86f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+						}
+					}
+				}
+				if( mySimpleState.mySlices[9].targetDistance >= 221.39f ) { 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+						if( mySimpleState.mySlices[6].targetDistance < 74.54f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						if( mySimpleState.mySlices[6].targetDistance >= 74.54f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+					}
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+				}
+			}
+			if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+				if( mySimpleState.mySlices[18].targetDistance < 14.36f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+				if( mySimpleState.mySlices[18].targetDistance >= 14.36f ) { 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Away") ) { 
+						if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") ) { 
+							if( mySimpleState.mySlices[1].targetDistance < 94.3f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+							if( mySimpleState.mySlices[1].targetDistance >= 94.3f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+						}
+						if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+						if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+					}
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+						if( mySimpleState.mySlices[8].targetDistance < 151.61f ) { 
+							if( mySimpleState.mySlices[0].targetDistance < 230.02f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+							if( mySimpleState.mySlices[0].targetDistance >= 230.02f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						}
+						if( mySimpleState.mySlices[8].targetDistance >= 151.61f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+					}
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+						if( mySimpleState.shipDirection < 1.05f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						if( mySimpleState.shipDirection >= 1.05f ) { 
+							if( mySimpleState.shipDirection < 3.9f ) { 
+								if( mySimpleState.mySlices[0].targetDistance < 248.43f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+								if( mySimpleState.mySlices[0].targetDistance >= 248.43f ) { 
+									if( mySimpleState.mySlices[18].targetDistance < 150.94f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+									if( mySimpleState.mySlices[18].targetDistance >= 150.94f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+								}
+							}
+							if( mySimpleState.shipDirection >= 3.9f ) { 
+								if( mySimpleState.goalDirection < 2.69f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+								if( mySimpleState.goalDirection >= 2.69f ) { 
+									if( mySimpleState.mySlices[5].targetDistance < 165.26f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+									if( mySimpleState.mySlices[5].targetDistance >= 165.26f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+								}
+							}
+						}
+					}
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+						if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+						if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") ) { 
+							if( mySimpleState.mySlices[7].targetDistance < 246.4f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+							if( mySimpleState.mySlices[7].targetDistance >= 246.4f ) { 
+								if( mySimpleState.canShoot  ==  true )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+								if( mySimpleState.canShoot  ==  false ) { 
+									if( mySimpleState.mySlices[5].targetDistance < 63.65f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+									if( mySimpleState.mySlices[5].targetDistance >= 63.65f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+								}
+							}
+						}
+						if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+							if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+							if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+								if( mySimpleState.shipDirection < 1.63f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+								if( mySimpleState.shipDirection >= 1.63f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+							}
+							if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						}
+						if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") ) { 
+							if( mySimpleState.mySlices[6].targetDistance < 205.63f ) { 
+								if( mySimpleState.mySlices[6].targetDistance < 154.76f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+								if( mySimpleState.mySlices[6].targetDistance >= 154.76f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+							}
+							if( mySimpleState.mySlices[6].targetDistance >= 205.63f ) { 
+								if( mySimpleState.mySlices[1].targetDistance < 69.42f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+								if( mySimpleState.mySlices[1].targetDistance >= 69.42f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+							}
+						}
+						if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+						if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+							if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+							if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") ) { 
+								if( mySimpleState.mySlices[1].targetDistance < 247.67f ) { 
+									if( mySimpleState.mySlices[1].targetDistance < 234.75f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDistance >= 234.75f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+								}
+								if( mySimpleState.mySlices[1].targetDistance >= 247.67f ) { 
+									if( mySimpleState.mySlices[1].targetDistance < 249.3f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDistance >= 249.3f ) { 
+										if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") ) { 
+											if( mySimpleState.mySlices[19].targetDistance < 111.69f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+											if( mySimpleState.mySlices[19].targetDistance >= 111.69f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+										}
+										if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+											if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+												if( mySimpleState.goalDirection < 5.61f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+												if( mySimpleState.goalDirection >= 5.61f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+											}
+											if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+											if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										}
+										if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									}
+								}
+							}
+							if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+								if( mySimpleState.mySlices[14].targetDistance < 244.74f ) { 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								}
+								if( mySimpleState.mySlices[14].targetDistance >= 244.74f ) { 
+									if( mySimpleState.mySlices[9].targetDistance < 230.94f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+									if( mySimpleState.mySlices[9].targetDistance >= 230.94f ) { 
+										if( mySimpleState.mySlices[3].targetDistance < 225.56f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+										if( mySimpleState.mySlices[3].targetDistance >= 225.56f ) { 
+											if( mySimpleState.shipDirection < 1.29f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+											if( mySimpleState.shipDirection >= 1.29f ) { 
+												if( mySimpleState.mySlices[12].targetDistance < 97.77f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+												if( mySimpleState.mySlices[12].targetDistance >= 97.77f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+											}
+										}
+									}
+								}
+							}
+							if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+								if( mySimpleState.mySlices[0].targetDistance < 201.28f ) { 
+									if( mySimpleState.mySlices[7].targetDistance < 158.46f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+									if( mySimpleState.mySlices[7].targetDistance >= 158.46f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+								}
+								if( mySimpleState.mySlices[0].targetDistance >= 201.28f ) { 
+									if( mySimpleState.mySlices[13].targetDistance < 236.41f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+									if( mySimpleState.mySlices[13].targetDistance >= 236.41f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+								}
+							}
+							if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+								if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Away") ) { 
+									if( mySimpleState.goalDirection < 5.35f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+									if( mySimpleState.goalDirection >= 5.35f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+								}
+								if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") ) { 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+										if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+										if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+											if( mySimpleState.mySlices[0].targetDistance < 97.39f ) { 
+												if( mySimpleState.mySlices[14].targetDistance < 152.66f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+												if( mySimpleState.mySlices[14].targetDistance >= 152.66f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+											}
+											if( mySimpleState.mySlices[0].targetDistance >= 97.39f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+										}
+										if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									}
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								}
+								if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+									if( mySimpleState.goalDirection < 3.55f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+									if( mySimpleState.goalDirection >= 3.55f ) { 
+										if( mySimpleState.mySlices[11].targetDistance < 190.27f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+										if( mySimpleState.mySlices[11].targetDistance >= 190.27f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+									}
+								}
+								if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") ) { 
+									if( mySimpleState.mySlices[0].targetDistance < 131.49f ) { 
+										if( mySimpleState.mySlices[6].targetDistance < 155.42f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+										if( mySimpleState.mySlices[6].targetDistance >= 155.42f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+									}
+									if( mySimpleState.mySlices[0].targetDistance >= 131.49f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+								}
+								if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+									if( mySimpleState.mySlices[4].targetDistance < 222.69f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+									if( mySimpleState.mySlices[4].targetDistance >= 222.69f ) { 
+										if( mySimpleState.mySlices[0].targetDistance < 172.87f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+										if( mySimpleState.mySlices[0].targetDistance >= 172.87f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+									}
+								}
+								if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+									if( mySimpleState.mySlices[14].targetDistance < 202.17f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+									if( mySimpleState.mySlices[14].targetDistance >= 202.17f ) { 
+										if( mySimpleState.mySlices[8].targetDistance < 116.64f ) { 
+											if( mySimpleState.mySlices[1].targetDistance < 208.58f ) { 
+												if( mySimpleState.mySlices[1].targetDistance < 157.09f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+												if( mySimpleState.mySlices[1].targetDistance >= 157.09f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+											}
+											if( mySimpleState.mySlices[1].targetDistance >= 208.58f ) { 
+												if( mySimpleState.mySlices[7].targetDistance < 243.27f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+												if( mySimpleState.mySlices[7].targetDistance >= 243.27f ) { 
+													if( mySimpleState.mySlices[2].targetDistance < 191.47f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+													if( mySimpleState.mySlices[2].targetDistance >= 191.47f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+												}
+											}
+										}
+										if( mySimpleState.mySlices[8].targetDistance >= 116.64f ) { 
+											if( mySimpleState.mySlices[9].targetDistance < 148.33f ) { 
+												if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+												if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+												if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+												if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+												if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+												if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+													if( mySimpleState.mySlices[8].targetDistance < 146.43f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+													if( mySimpleState.mySlices[8].targetDistance >= 146.43f ) { 
+														if( mySimpleState.mySlices[1].targetDistance < 184.12f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+														if( mySimpleState.mySlices[1].targetDistance >= 184.12f ) { 
+															if( mySimpleState.mySlices[19].targetDistance < 83.46f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+															if( mySimpleState.mySlices[19].targetDistance >= 83.46f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+														}
+													}
+												}
+												if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+												if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+												if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+											}
+											if( mySimpleState.mySlices[9].targetDistance >= 148.33f ) { 
+												if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+												if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+												if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+												if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") ) { 
+													if( mySimpleState.mySlices[18].targetDistance < 81.41f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+													if( mySimpleState.mySlices[18].targetDistance >= 81.41f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+												}
+												if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+												if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+												if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+												if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+												if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											}
+										}
+									}
+								}
+								if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+								if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							}
+							if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+							if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") ) { 
+								if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+								if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+								if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+								if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							}
+						}
+						if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+						if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+					}
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") ) { 
+						if( mySimpleState.mySlices[12].targetDistance < 178.98f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+						if( mySimpleState.mySlices[12].targetDistance >= 178.98f ) { 
+							if( mySimpleState.mySlices[14].targetDistance < 26.5f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+							if( mySimpleState.mySlices[14].targetDistance >= 26.5f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						}
+					}
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+					if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+				}
+			}
+			if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") ) { 
+				if( mySimpleState.mySlices[7].targetDistance < 162.69f ) { 
+					if( mySimpleState.mySlices[15].targetDistance < 50.23f ) { 
+						if( mySimpleState.canShoot  ==  true )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						if( mySimpleState.canShoot  ==  false )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+					}
+					if( mySimpleState.mySlices[15].targetDistance >= 50.23f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+				}
+				if( mySimpleState.mySlices[7].targetDistance >= 162.69f ) { 
+					if( mySimpleState.mySlices[7].targetDistance < 235.32f ) { 
+						if( mySimpleState.mySlices[10].targetDistance < 109.46f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						if( mySimpleState.mySlices[10].targetDistance >= 109.46f ) { 
+							if( mySimpleState.mySlices[16].targetDistance < 208.37f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+							if( mySimpleState.mySlices[16].targetDistance >= 208.37f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						}
+					}
+					if( mySimpleState.mySlices[7].targetDistance >= 235.32f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+				}
+			}
+			if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") ) { 
+				if( mySimpleState.mySlices[0].targetDistance < 27.84f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+				if( mySimpleState.mySlices[0].targetDistance >= 27.84f ) { 
+					if( mySimpleState.goalDirection < 3.23f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+					if( mySimpleState.goalDirection >= 3.23f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+				}
+			}
+			if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") ) { 
+				if( mySimpleState.mySlices[3].targetDistance < 175.23f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+				if( mySimpleState.mySlices[3].targetDistance >= 175.23f ) { 
+					if( mySimpleState.mySlices[13].targetDistance < 147.05f ) { 
+						if( mySimpleState.mySlices[9].targetDistance < 219.84f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+						if( mySimpleState.mySlices[9].targetDistance >= 219.84f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+					}
+					if( mySimpleState.mySlices[13].targetDistance >= 147.05f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+				}
+			}
+		}
+		if( mySimpleState.shipSpeed >= 0.04f ) { 
+			if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("Away") ) { 
+				if( mySimpleState.mySlices[12].targetDistance < 238.65f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+				if( mySimpleState.mySlices[12].targetDistance >= 238.65f ) { 
+					if( mySimpleState.mySlices[7].targetDistance < 166.93f ) { 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					}
+					if( mySimpleState.mySlices[7].targetDistance >= 166.93f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+				}
+			}
+			if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") ) { 
+				if( mySimpleState.canShoot  ==  true )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+				if( mySimpleState.canShoot  ==  false ) { 
+					if( mySimpleState.invincible  ==  true )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+					if( mySimpleState.invincible  ==  false )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+				}
+			}
+			if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+				if( mySimpleState.mySlices[14].targetDistance < 241.93f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+				if( mySimpleState.mySlices[14].targetDistance >= 241.93f ) { 
+					if( mySimpleState.shipDirection < 2.04f ) { 
+						if( mySimpleState.goalDirection < 1.06f ) { 
+							if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") ) { 
+								if( mySimpleState.mySlices[2].targetDistance < 195.45f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+								if( mySimpleState.mySlices[2].targetDistance >= 195.45f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+							}
+							if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+							if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						}
+						if( mySimpleState.goalDirection >= 1.06f ) { 
+							if( mySimpleState.mySlices[2].targetDistance < 205.88f ) { 
+								if( mySimpleState.shipDirection < 1.88f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+								if( mySimpleState.shipDirection >= 1.88f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+							}
+							if( mySimpleState.mySlices[2].targetDistance >= 205.88f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+						}
+					}
+					if( mySimpleState.shipDirection >= 2.04f ) { 
+						if( mySimpleState.mySlices[3].targetDistance < 228 )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+						if( mySimpleState.mySlices[3].targetDistance >= 228 )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+					}
+				}
+			}
+			if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+			if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+				if( mySimpleState.mySlices[12].targetDistance < 191.11f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+				if( mySimpleState.mySlices[12].targetDistance >= 191.11f ) { 
+					if( mySimpleState.shipSpeed < 1.21f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+					if( mySimpleState.shipSpeed >= 1.21f ) { 
+						if( mySimpleState.shipDirection < 5.54f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+						if( mySimpleState.shipDirection >= 5.54f ) { 
+							if( mySimpleState.shipDirection < 5.96f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+							if( mySimpleState.shipDirection >= 5.96f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+						}
+					}
+				}
+			}
+			if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+				if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Away") ) { 
+					if( mySimpleState.mySlices[3].targetDistance < 231.89f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+					if( mySimpleState.mySlices[3].targetDistance >= 231.89f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+				}
+				if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") ) { 
+					if( mySimpleState.mySlices[11].targetDistance < 188.77f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+					if( mySimpleState.mySlices[11].targetDistance >= 188.77f ) { 
+						if( mySimpleState.mySlices[11].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[11].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[11].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[11].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[11].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+						if( mySimpleState.mySlices[11].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+							if( mySimpleState.mySlices[10].targetDistance < 203.96f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+							if( mySimpleState.mySlices[10].targetDistance >= 203.96f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+						}
+						if( mySimpleState.mySlices[11].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[11].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[11].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					}
+				}
+				if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") ) { 
+					if( mySimpleState.mySlices[1].targetDistance < 202.16f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+					if( mySimpleState.mySlices[1].targetDistance >= 202.16f ) { 
+						if( mySimpleState.shipDirection < 5.83f ) { 
+							if( mySimpleState.mySlices[1].targetDistance < 235.23f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+							if( mySimpleState.mySlices[1].targetDistance >= 235.23f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+						}
+						if( mySimpleState.shipDirection >= 5.83f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+					}
+				}
+				if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+					if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+					if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+					if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+					if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+							if( mySimpleState.goalDistance < 210.74f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+							if( mySimpleState.goalDistance >= 210.74f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+						}
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+							if( mySimpleState.canShoot  ==  true ) { 
+								if( mySimpleState.mySlices[0].targetDistance < 129.82f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+								if( mySimpleState.mySlices[0].targetDistance >= 129.82f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+							}
+							if( mySimpleState.canShoot  ==  false )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+						}
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					}
+					if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+					if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				}
+				if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+					if( mySimpleState.mySlices[1].targetDistance < 235.69f ) { 
+						if( mySimpleState.mySlices[10].targetDistance < 84.85f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+						if( mySimpleState.mySlices[10].targetDistance >= 84.85f ) { 
+							if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+							if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") ) { 
+								if( mySimpleState.mySlices[10].targetDistance < 241.7f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+								if( mySimpleState.mySlices[10].targetDistance >= 241.7f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+							}
+							if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+								if( mySimpleState.goalDirection < 2.72f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+								if( mySimpleState.goalDirection >= 2.72f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+							}
+							if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+								if( mySimpleState.goalDirection < 0.11f ) { 
+									if( mySimpleState.mySlices[10].targetDistance < 157.14f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+									if( mySimpleState.mySlices[10].targetDistance >= 157.14f ) { 
+										if( mySimpleState.mySlices[8].targetDistance < 175.85f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+										if( mySimpleState.mySlices[8].targetDistance >= 175.85f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+									}
+								}
+								if( mySimpleState.goalDirection >= 0.11f ) { 
+									if( mySimpleState.shipDirection < 0.38f ) { 
+										if( mySimpleState.mySlices[1].targetDistance < 126.75f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+										if( mySimpleState.mySlices[1].targetDistance >= 126.75f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+									}
+									if( mySimpleState.shipDirection >= 0.38f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+								}
+							}
+							if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+								if( mySimpleState.mySlices[4].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[4].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") ) { 
+									if( mySimpleState.mySlices[3].targetDistance < 254.3f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+									if( mySimpleState.mySlices[3].targetDistance >= 254.3f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+								}
+								if( mySimpleState.mySlices[4].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+									if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+									if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+									if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								}
+								if( mySimpleState.mySlices[4].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+								if( mySimpleState.mySlices[4].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+									if( mySimpleState.mySlices[18].targetDistance < 152.77f ) { 
+										if( mySimpleState.goalDistance < 136.39f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+										if( mySimpleState.goalDistance >= 136.39f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+									}
+									if( mySimpleState.mySlices[18].targetDistance >= 152.77f ) { 
+										if( mySimpleState.shipSpeed < 1.17f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+										if( mySimpleState.shipSpeed >= 1.17f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+									}
+								}
+								if( mySimpleState.mySlices[4].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+									if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+										if( mySimpleState.mySlices[18].targetDistance < 226.76f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+										if( mySimpleState.mySlices[18].targetDistance >= 226.76f ) { 
+											if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+												if( mySimpleState.mySlices[15].targetDistance < 228.84f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+												if( mySimpleState.mySlices[15].targetDistance >= 228.84f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+											}
+											if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[9].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") ) { 
+												if( mySimpleState.mySlices[2].targetDistance < 246.88f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+												if( mySimpleState.mySlices[2].targetDistance >= 246.88f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+											}
+										}
+									}
+									if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") ) { 
+										if( mySimpleState.shipSpeed < 0.11f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+										if( mySimpleState.shipSpeed >= 0.11f ) { 
+											if( mySimpleState.mySlices[1].targetDistance < 136.29f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+											if( mySimpleState.mySlices[1].targetDistance >= 136.29f ) { 
+												if( mySimpleState.shipSpeed < 0.79f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+												if( mySimpleState.shipSpeed >= 0.79f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+											}
+										}
+									}
+								}
+								if( mySimpleState.mySlices[4].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[4].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[4].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							}
+							if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") ) { 
+								if( mySimpleState.shipDirection < 6.08f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+								if( mySimpleState.shipDirection >= 6.08f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+							}
+							if( mySimpleState.mySlices[1].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						}
+					}
+					if( mySimpleState.mySlices[1].targetDistance >= 235.69f ) { 
+						if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Away") ) { 
+							if( mySimpleState.goalDirection < 5.86f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+							if( mySimpleState.goalDirection >= 5.86f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+						}
+						if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") ) { 
+							if( mySimpleState.mySlices[12].targetDistance < 250.1f ) { 
+								if( mySimpleState.shipSpeed < 1.53f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+								if( mySimpleState.shipSpeed >= 1.53f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+							}
+							if( mySimpleState.mySlices[12].targetDistance >= 250.1f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						}
+						if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+						if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+						if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+							if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+							if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+								if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+								if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+								if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							}
+							if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") ) { 
+								if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+								if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[13].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+							}
+							if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+								if( mySimpleState.mySlices[9].targetDistance < 231.7f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+								if( mySimpleState.mySlices[9].targetDistance >= 231.7f ) { 
+									if( mySimpleState.mySlices[8].targetDistance < 186.24f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+									if( mySimpleState.mySlices[8].targetDistance >= 186.24f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+								}
+							}
+							if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+								if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Away") ) { 
+									if( mySimpleState.goalDistance < 147.34f ) { 
+										if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+											if( mySimpleState.goalDirection < 0.16f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+											if( mySimpleState.goalDirection >= 0.16f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+										}
+										if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") ) { 
+											if( mySimpleState.shipSpeed < 1.32f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+											if( mySimpleState.shipSpeed >= 1.32f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+										}
+										if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[18].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									}
+									if( mySimpleState.goalDistance >= 147.34f ) { 
+										if( mySimpleState.goalDistance < 153.88f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+										if( mySimpleState.goalDistance >= 153.88f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+									}
+								}
+								if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+									if( mySimpleState.mySlices[1].targetDistance < 252.34f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+									if( mySimpleState.mySlices[1].targetDistance >= 252.34f ) { 
+										if( mySimpleState.goalDistance < 49.31f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+										if( mySimpleState.goalDistance >= 49.31f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+									}
+								}
+								if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") ) { 
+									if( mySimpleState.mySlices[6].targetDistance < 67.87f ) { 
+										if( mySimpleState.goalDirection < 0.56f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+										if( mySimpleState.goalDirection >= 0.56f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+									}
+									if( mySimpleState.mySlices[6].targetDistance >= 67.87f ) { 
+										if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+										if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+										if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										if( mySimpleState.mySlices[15].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+									}
+								}
+								if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+									if( mySimpleState.mySlices[9].targetDistance < 206.49f ) { 
+										if( mySimpleState.goalDirection < 5.07f ) { 
+											if( mySimpleState.shipSpeed < 0.84f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+											if( mySimpleState.shipSpeed >= 0.84f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+										}
+										if( mySimpleState.goalDirection >= 5.07f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+									}
+									if( mySimpleState.mySlices[9].targetDistance >= 206.49f ) { 
+										if( mySimpleState.goalDirection < 0.4f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+										if( mySimpleState.goalDirection >= 0.4f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+									}
+								}
+								if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+										if( mySimpleState.mySlices[3].targetDistance < 103.95f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+										if( mySimpleState.mySlices[3].targetDistance >= 103.95f ) { 
+											if( mySimpleState.goalDirection < 0.07f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+											if( mySimpleState.goalDirection >= 0.07f ) { 
+												if( mySimpleState.mySlices[5].targetDistance < 253.75f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+												if( mySimpleState.mySlices[5].targetDistance >= 253.75f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+											}
+										}
+									}
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+										if( mySimpleState.goalDistance < 83.26f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+										if( mySimpleState.goalDistance >= 83.26f ) { 
+											if( mySimpleState.goalDirection < 3.2f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+											if( mySimpleState.goalDirection >= 3.2f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+										}
+									}
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+										if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Away") ) { 
+											if( mySimpleState.mySlices[0].targetDistance < 207.47f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+											if( mySimpleState.mySlices[0].targetDistance >= 207.47f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+										}
+										if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+										if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+											if( mySimpleState.mySlices[6].targetDistance < 236.94f ) { 
+												if( mySimpleState.goalDirection < 0.7f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+												if( mySimpleState.goalDirection >= 0.7f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+											}
+											if( mySimpleState.mySlices[6].targetDistance >= 236.94f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+										}
+										if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") ) { 
+											if( mySimpleState.mySlices[15].targetDistance < 160.22f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+											if( mySimpleState.mySlices[15].targetDistance >= 160.22f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+										}
+										if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+											if( mySimpleState.goalDistance < 39.96f ) { 
+												if( mySimpleState.shipDirection < 0.06f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+												if( mySimpleState.shipDirection >= 0.06f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+											}
+											if( mySimpleState.goalDistance >= 39.96f ) { 
+												if( mySimpleState.mySlices[6].targetDistance < 250.58f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+												if( mySimpleState.mySlices[6].targetDistance >= 250.58f ) { 
+													if( mySimpleState.mySlices[14].targetDistance < 194.87f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+													if( mySimpleState.mySlices[14].targetDistance >= 194.87f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+												}
+											}
+										}
+										if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+											if( mySimpleState.mySlices[4].targetDistance < 251.25f ) { 
+												if( mySimpleState.shipDirection < 6.23f ) { 
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") ) { 
+														if( mySimpleState.mySlices[2].targetDistance < 153.64f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+														if( mySimpleState.mySlices[2].targetDistance >= 153.64f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+													}
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+												}
+												if( mySimpleState.shipDirection >= 6.23f ) { 
+													if( mySimpleState.canShoot  ==  true ) { 
+														if( mySimpleState.mySlices[5].targetDistance < 206.57f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+														if( mySimpleState.mySlices[5].targetDistance >= 206.57f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+													}
+													if( mySimpleState.canShoot  ==  false )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+												}
+											}
+											if( mySimpleState.mySlices[4].targetDistance >= 251.25f ) { 
+												if( mySimpleState.mySlices[7].targetDistance < 239.82f ) { 
+													if( mySimpleState.mySlices[8].targetDistance < 253.56f ) { 
+														if( mySimpleState.mySlices[6].targetDistance < 151.53f ) { 
+															if( mySimpleState.goalDirection < 6.2f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+															if( mySimpleState.goalDirection >= 6.2f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+														}
+														if( mySimpleState.mySlices[6].targetDistance >= 151.53f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+													}
+													if( mySimpleState.mySlices[8].targetDistance >= 253.56f ) { 
+														if( mySimpleState.mySlices[1].targetDistance < 255.61f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+														if( mySimpleState.mySlices[1].targetDistance >= 255.61f ) { 
+															if( mySimpleState.shipSpeed < 1.78f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+															if( mySimpleState.shipSpeed >= 1.78f ) { 
+																if( mySimpleState.goalDirection < 0.16f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+																if( mySimpleState.goalDirection >= 0.16f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+															}
+														}
+													}
+												}
+												if( mySimpleState.mySlices[7].targetDistance >= 239.82f ) { 
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") ) { 
+														if( mySimpleState.mySlices[2].targetDistance < 67.12f ) { 
+															if( mySimpleState.mySlices[13].targetDistance < 159.29f ) { 
+																if( mySimpleState.mySlices[13].targetDistance < 62.42f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+																if( mySimpleState.mySlices[13].targetDistance >= 62.42f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+															}
+															if( mySimpleState.mySlices[13].targetDistance >= 159.29f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+														}
+														if( mySimpleState.mySlices[2].targetDistance >= 67.12f ) { 
+															if( mySimpleState.mySlices[1].targetDistance < 251.06f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+															if( mySimpleState.mySlices[1].targetDistance >= 251.06f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+														}
+													}
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") ) { 
+														if( mySimpleState.mySlices[10].targetDistance < 167.18f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+														if( mySimpleState.mySlices[10].targetDistance >= 167.18f ) { 
+															if( mySimpleState.mySlices[5].targetDistance < 252.29f ) { 
+																if( mySimpleState.shipSpeed < 1.21f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+																if( mySimpleState.shipSpeed >= 1.21f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+															}
+															if( mySimpleState.mySlices[5].targetDistance >= 252.29f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+														}
+													}
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+														if( mySimpleState.mySlices[11].targetDistance < 161.96f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+														if( mySimpleState.mySlices[11].targetDistance >= 161.96f ) { 
+															if( mySimpleState.mySlices[9].targetDistance < 218.36f ) { 
+																if( mySimpleState.shipSpeed < 1.18f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+																if( mySimpleState.shipSpeed >= 1.18f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+															}
+															if( mySimpleState.mySlices[9].targetDistance >= 218.36f ) { 
+																if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+																if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+																if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+																if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+																if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+																if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+																if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+																if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+																if( mySimpleState.mySlices[6].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+															}
+														}
+													}
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+													if( mySimpleState.mySlices[2].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+												}
+											}
+										}
+										if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") ) { 
+											if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+												if( mySimpleState.mySlices[10].targetDistance < 159.06f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+												if( mySimpleState.mySlices[10].targetDistance >= 159.06f ) { 
+													if( mySimpleState.mySlices[11].targetDistance < 62.75f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+													if( mySimpleState.mySlices[11].targetDistance >= 62.75f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+												}
+											}
+											if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+											if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+											if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+											if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+										}
+										if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+										if( mySimpleState.mySlices[5].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+									}
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								}
+								if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								if( mySimpleState.mySlices[19].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							}
+							if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") ) { 
+								if( mySimpleState.mySlices[0].targetDistance < 178.52f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+								if( mySimpleState.mySlices[0].targetDistance >= 178.52f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+							}
+							if( mySimpleState.mySlices[17].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") ) { 
+								if( mySimpleState.mySlices[13].targetDistance < 209.64f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+								if( mySimpleState.mySlices[13].targetDistance >= 209.64f ) { 
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+										if( mySimpleState.goalDistance < 138.99f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+										if( mySimpleState.goalDistance >= 138.99f ) { 
+											if( mySimpleState.goalDirection < 6.22f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+											if( mySimpleState.goalDirection >= 6.22f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+										}
+									}
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+									if( mySimpleState.mySlices[3].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+								}
+							}
+						}
+						if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+						if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") ) { 
+							if( mySimpleState.shipSpeed < 1.16f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+							if( mySimpleState.shipSpeed >= 1.16f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+						}
+						if( mySimpleState.mySlices[12].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") ) { 
+							if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+							if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+								if( mySimpleState.goalDistance < 274.42f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+								if( mySimpleState.goalDistance >= 274.42f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+							}
+							if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+							if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+							if( mySimpleState.mySlices[8].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+						}
+					}
+				}
+				if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+				if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") ) { 
+					if( mySimpleState.shipDirection < 5.85f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+					if( mySimpleState.shipDirection >= 5.85f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+				}
+				if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+			}
+			if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") ) { 
+				if( mySimpleState.mySlices[0].targetDistance < 58.67f ) { 
+					if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Away") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") ) { 
+						if( mySimpleState.canShoot  ==  true )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						if( mySimpleState.canShoot  ==  false )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+					}
+					if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("None") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+					if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") ) { 
+						if( mySimpleState.shipSpeed < 0.44f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						if( mySimpleState.shipSpeed >= 0.44f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+					}
+					if( mySimpleState.mySlices[0].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+				}
+				if( mySimpleState.mySlices[0].targetDistance >= 58.67f ) { 
+					if( mySimpleState.invincible  ==  true )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+					if( mySimpleState.invincible  ==  false ) { 
+						if( mySimpleState.shipDirection < 5.6f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+						if( mySimpleState.shipDirection >= 5.6f ) { 
+							if( mySimpleState.goalDistance < 350.98f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+							if( mySimpleState.goalDistance >= 350.98f ) { 
+								if( mySimpleState.goalDirection < 1.06f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+								if( mySimpleState.goalDirection >= 1.06f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+							}
+						}
+					}
+				}
+			}
+			if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") ) { 
+				if( mySimpleState.shipDirection < 5.65f ) { 
+					if( mySimpleState.goalDirection < 5.87f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+					if( mySimpleState.goalDirection >= 5.87f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Right" ) ) ); 
+				}
+				if( mySimpleState.shipDirection >= 5.65f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+			}
+			if( mySimpleState.mySlices[7].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") ) { 
+				if( mySimpleState.shipSpeed < 3.21f ) { 
+					if( mySimpleState.mySlices[11].targetDistance < 121.72f ) { 
+						if( mySimpleState.shipDirection < 3.23f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+						if( mySimpleState.shipDirection >= 3.23f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up-Left" ) ) ); 
+					}
+					if( mySimpleState.mySlices[11].targetDistance >= 121.72f ) { 
+						if( mySimpleState.goalDistance < 183.38f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+						if( mySimpleState.goalDistance >= 183.38f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+					}
+				}
+				if( mySimpleState.shipSpeed >= 3.21f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+			}
+		}
+	}
+	if( mySimpleState.mySlices[16].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") ) { 
+		if( mySimpleState.mySlices[8].targetDistance < 220.82f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+		if( mySimpleState.mySlices[8].targetDistance >= 220.82f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+	}
+	if( mySimpleState.mySlices[16].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") ) { 
+		if( mySimpleState.mySlices[2].targetDistance < 215.11f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+		if( mySimpleState.mySlices[2].targetDistance >= 215.11f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+	}
+	if( mySimpleState.mySlices[16].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") ) { 
+		if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Away") ) { 
+			if( mySimpleState.goalDistance < 283.87f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+			if( mySimpleState.goalDistance >= 283.87f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+		}
+		if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Away-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Away-CounterClockwise") ) { 
+			if( mySimpleState.mySlices[14].targetDistance < 180.95f ) { 
+				if( mySimpleState.mySlices[13].targetDistance < 180.02f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+				if( mySimpleState.mySlices[13].targetDistance >= 180.02f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+			}
+			if( mySimpleState.mySlices[14].targetDistance >= 180.95f ) { 
+				if( mySimpleState.mySlices[14].targetDistance < 186.89f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Fire-NoDirection" ) ) ); 
+				if( mySimpleState.mySlices[14].targetDistance >= 186.89f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "NoDirection" ) ) ); 
+			}
+		}
+		if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("None") ) { 
+			if( mySimpleState.mySlices[13].targetDistance < 228.26f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Left" ) ) ); 
+			if( mySimpleState.mySlices[13].targetDistance >= 228.26f ) { 
+				if( mySimpleState.goalDirection < 5.55f ) { 
+					if( mySimpleState.shipDirection < 3.21f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Right" ) ) ); 
+					if( mySimpleState.shipDirection >= 3.21f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+				}
+				if( mySimpleState.goalDirection >= 5.55f )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Up" ) ) ); 
+			}
+		}
+		if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Towards") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-Clockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+		if( mySimpleState.mySlices[14].targetDirection  ==  eRDir::stringToRelativeDirection("Towards-CounterClockwise") )      controller->doAction( Action::actionFromEnum( eAction::parser.stringToEnum( "Down" ) ) ); 
+	}
+}

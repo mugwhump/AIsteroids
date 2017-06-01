@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B25E34EA-5292-4162-9A6C-BE06F5F7596B}</ProjectGuid>
+    <RootNamespace>Asteroids</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>include;src;C:\Users\Mizzo\Documents\Visual Studio 2010\Projects\Asteroids\Asteroids;C:\Program Files (x86)\boost_1_52_0;C:\Program Files\MATLAB\R2011a\extern\include;include\Eigen;include\libgp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>lib;C:\Program Files (x86)\boost\boost_1_47\lib;C:\Program Files\MATLAB\R2011a\extern\lib\win32\microsoft</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glut32.lib;libmx.dll;libeng.dll;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>include;src;C:\Users\Mizzo\Documents\Visual Studio 2010\Projects\Asteroids\Asteroids;C:\Program Files (x86)\boost_1_52_0;C:\Program Files\MATLAB\R2011a\extern\include;include\Eigen;include\libgp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <PreprocessorDefinitions>WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>lib;C:\Program Files (x86)\boost_1_52_0\lib64;C:\Program Files\MATLAB\R2011a\extern\lib\win64\microsoft</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;libeng.lib;libmx.lib;lwpr.lib;XInput9_1_0.lib;GClasses.lib;libpng64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PreBuildEvent>
+      <Command>:touch "C:\Users\Mizzo\Documents\Visual Studio 2010\Projects\Asteroids\Asteroids\Matlab.h"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>include;src;C:\Users\Mizzo\Documents\Visual Studio 2010\Projects\Asteroids\Asteroids;C:\Program Files (x86)\boost_1_52_0;C:\Program Files\MATLAB\R2011a\extern\include;include\Eigen;include\libgp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>include;src;C:\Users\Mizzo\Documents\Visual Studio 2010\Projects\Asteroids\Asteroids;C:\Program Files (x86)\boost_1_52_0;C:\Program Files\MATLAB\R2011a\extern\include;include\Eigen;include\libgp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>lib;C:\Program Files (x86)\boost_1_52_0\lib64;C:\Program Files\MATLAB\R2011a\extern\lib\win64\microsoft</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglut.lib;libeng.lib;libmx.lib;lwpr.lib;XInput9_1_0.lib;GClasses.lib;libpng64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/LTCG /NODEFAULTLIB:LIBCMT %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Action.cpp" />
+    <ClCompile Include="AI.cpp" />
+    <ClCompile Include="AI_GP.cpp" />
+    <ClCompile Include="AI_Learner.cpp" />
+    <ClCompile Include="AI_LWPR.cpp" />
+    <ClCompile Include="AI_NN.cpp" />
+    <ClCompile Include="AI_RBFN.cpp" />
+    <ClCompile Include="AI_ReceptiveFields.cpp" />
+    <ClCompile Include="AI_Waffle.cpp" />
+    <ClCompile Include="Asteroid.cpp" />
+    <ClCompile Include="CompleteState.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="globals.cpp" />
+    <ClCompile Include="Defaults.cpp" />
+    <ClCompile Include="GraphicsUtil.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="PopUpText.cpp" />
+    <ClCompile Include="PowerUp.cpp" />
+    <ClCompile Include="InputDirection.cpp" />
+    <ClCompile Include="InputSource.cpp" />
+    <ClCompile Include="KeyboardListener.cpp" />
+    <ClCompile Include="Laser.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="Matlab.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="RelativeDirection.cpp" />
+    <ClCompile Include="RGBA.cpp" />
+    <ClCompile Include="Ship.cpp" />
+    <ClCompile Include="SimpleState.cpp" />
+    <ClCompile Include="src\cov.cc" />
+    <ClCompile Include="src\cov_factory.cc" />
+    <ClCompile Include="src\cov_linear_ard.cc" />
+    <ClCompile Include="src\cov_linear_one.cc" />
+    <ClCompile Include="src\cov_matern3_iso.cc" />
+    <ClCompile Include="src\cov_matern5_iso.cc" />
+    <ClCompile Include="src\cov_noise.cc" />
+    <ClCompile Include="src\cov_rbf_cs.cc" />
+    <ClCompile Include="src\cov_rq_iso.cc" />
+    <ClCompile Include="src\cov_se_ard.cc" />
+    <ClCompile Include="src\cov_se_iso.cc" />
+    <ClCompile Include="src\cov_sum.cc" />
+    <ClCompile Include="src\gp.cc" />
+    <ClCompile Include="src\gp_sparse.cc" />
+    <ClCompile Include="src\gp_utils.cc" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="src\rprop.cc" />
+    <ClCompile Include="src\sampleset.cc" />
+    <ClCompile Include="StateAction.cpp" />
+    <ClCompile Include="PlayData.cpp" />
+    <ClCompile Include="StringUtil.cpp" />
+    <ClCompile Include="XboxController.cpp" />
+    <ClCompile Include="XYObj.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Action.h" />
+    <ClInclude Include="AI.h" />
+    <ClInclude Include="AI_GP.h" />
+    <ClInclude Include="AI_Learner.h" />
+    <ClInclude Include="AI_LWPR.h" />
+    <ClInclude Include="AI_NN.h" />
+    <ClInclude Include="AI_RBFN.h" />
+    <ClInclude Include="AI_ReceptiveFields.h" />
+    <ClInclude Include="AI_Waffle.h" />
+    <ClInclude Include="Asteroid.h" />
+    <ClInclude Include="CompleteState.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="Serialize.h" />
+    <ClInclude Include="EnumParser.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="Defaults.h" />
+    <ClInclude Include="GraphicsUtil.h" />
+    <ClInclude Include="include\libGP\cov.h" />
+    <ClInclude Include="include\libGP\cov_factory.h" />
+    <ClInclude Include="include\libGP\cov_linear_ard.h" />
+    <ClInclude Include="include\libGP\cov_linear_one.h" />
+    <ClInclude Include="include\libGP\cov_matern3_iso.h" />
+    <ClInclude Include="include\libGP\cov_matern5_iso.h" />
+    <ClInclude Include="include\libGP\cov_noise.h" />
+    <ClInclude Include="include\libGP\cov_rbf_cs.h" />
+    <ClInclude Include="include\libGP\cov_rq_iso.h" />
+    <ClInclude Include="include\libGP\cov_se_ard.h" />
+    <ClInclude Include="include\libGP\cov_se_iso.h" />
+    <ClInclude Include="include\libGP\cov_sum.h" />
+    <ClInclude Include="include\libGP\gp.h" />
+    <ClInclude Include="include\libGP\gp_sparse.h" />
+    <ClInclude Include="include\libGP\gp_utils.h" />
+    <ClInclude Include="include\libGP\rprop.h" />
+    <ClInclude Include="include\libGP\sampleset.h" />
+    <ClInclude Include="Matlab.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="PopUpText.h" />
+    <ClInclude Include="PowerUp.h" />
+    <ClInclude Include="InputDirection.h" />
+    <ClInclude Include="InputSource.h" />
+    <ClInclude Include="KeyboardListener.h" />
+    <ClInclude Include="Laser.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="MyError.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="RelativeDirection.h" />
+    <ClInclude Include="RGBA.h" />
+    <ClInclude Include="Ship.h" />
+    <ClInclude Include="SimpleState.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="StateAction.h" />
+    <ClInclude Include="PlayData.h" />
+    <ClInclude Include="StringUtil.h" />
+    <ClInclude Include="XboxController.h" />
+    <ClInclude Include="XYObj.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Notes.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
